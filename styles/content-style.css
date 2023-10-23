@@ -47,6 +47,12 @@
   hyphens: auto;
 }
 
+.environment-tail {
+  display: grid;
+  justify-items: center;
+  font-size: 32px;
+}
+
 .definition {
   background-color: var(--definition-bg);
 }
@@ -59,6 +65,10 @@
   background-color: var(--myexample-bg);
 }
 
+.collapsed {
+  display: none;
+}
+
 .mynote {
   background-color: var(--mynote-bg);
 }
@@ -66,6 +76,29 @@
 .list-container {
   margin-block: 6px;
 }
+
+.inner-title {
+  display: block;
+  font-size: 1.1em;
+  text-decoration: underline;
+  font-weight: 600;
+  margin-block: 0.1em;
+}
+
+.center {
+  margin-block: 0.2rem;
+
+  text-align: center;
+
+  overflow-x: auto;
+}
+
+.mono {
+  font-family: monospace;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
 
 .image-environment,
 .image-wrapper {
@@ -143,4 +176,5 @@
   display: block;
   overflow-x: auto;
   overflow-y: hidden;
+  white-space: nowrap;
 }
